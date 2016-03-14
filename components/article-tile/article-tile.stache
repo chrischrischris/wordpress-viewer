@@ -1,0 +1,7 @@
+<div class="tile">
+    <p>{{postDate}}</p>
+    {{#if imageUrl}}
+        <a href="{{articleUrl}}"><img src="{{imageUrl}}"></a>
+    {{/if}}
+    <h1><a href="{{articleUrl}}">{{articleTitle}}</a></h1>
+</div>

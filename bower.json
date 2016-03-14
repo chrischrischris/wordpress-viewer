@@ -1,0 +1,23 @@
+{
+  "name": "wordpress-viewer",
+  "description": "Small frontend to view wordpress entries",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "Chris Peyer"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "CanJS": "canjs#^2.3.20",
+    "requirejs": "^2.1.22"
+  }
+}

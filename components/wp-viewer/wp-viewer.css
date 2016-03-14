@@ -1,0 +1,37 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title, .loading {
+    text-align: center;
+}
+
+.article-display {
+    -webkit-columns: 250px 4;
+    columns: 250px 4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.loadmore {
+    display: inline-block;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    border: 2px solid gray;
+    border-radius: 25px;
+    width: 90%;
+    background-color: #25383C;
+    cursor: pointer;
+    text-align: center;
+}
+
+.loadmore {
+    font-size: 30px;
+    color: white;
+}
+
+.loadmore:hover {
+    background-color: gray;
+}

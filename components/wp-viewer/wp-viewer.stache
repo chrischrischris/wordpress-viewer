@@ -1,0 +1,30 @@
+<div class="title">
+    <h1>{{title}}</h1>    
+</div>
+
+{{#if articles.isPending}}
+    <div class="loading">
+        <br>
+        <h3>Loading articles...</h3>
+    </div>
+{{/if}}
+
+<div class="article-display">
+    {{#if articles.isResolved}}
+    <ul id="article-list">
+        {{#if articles.length}}
+            {{#each articles}}
+                <article-tile {image-url}="previewImg" {article-title}="title" {article-url}="short_URL" {post-date}="date"/>
+            {{/each}}
+            <div class="loadmore">
+                Load More Articles
+            </div>
+        {{/if}}
+    </ul>
+    {{/if}}
+</div>
+
+{{#if articles.isRejected}}
+    <h3>Error: {{articles.reason.responseJSON.message}}</h3>
+{{/if}}
+
